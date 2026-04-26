@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: white;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+/* Custom Styles for UI */
+.planet-label {
+  pointer-events: none;
+  user-select: none;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+input[type=range] {
+  cursor: pointer;
+}
