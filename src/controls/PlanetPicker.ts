@@ -2,11 +2,7 @@ import * as THREE from 'three';
 import { Planet } from '../solar-system/Planet';
 
 export function setupPlanetPicker(
-  camera: THREE.Camera,
-  scene: THREE.Scene,
-  planets: Planet[],
-  onSelect: (planet: Planet | null) => void
-) {
+camera: THREE.Camera, scene: THREE.Scene<THREE.Object3DEventMap>, planets: Planet[], onSelect: (planet: Planet | null) => void) {
   const raycaster = new THREE.Raycaster();
   const mouse = new THREE.Vector2();
 
